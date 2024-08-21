@@ -1,4 +1,6 @@
-const BASE_URL = process.env.REACT_APP_BASE_URL
+const BASE_URL = process.env.REACT_APP_NODE_ENV === "production"
+? `https://studynotion-edtech-mygq.onrender.com/`
+: process.env.REACT_APP_BASE_URL
 
 // AUTH ENDPOINTS
 export const endpoints = {
